@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from '../Components/Header/Header'
+import { GlobalStyles } from '../styles/Global.styled'
 
 const Homepage = () => {
     return (
-        <div>This is the homepage</div>
+        <>
+            <GlobalStyles />
+            <Header />
+            <div>This is the homepage</div>
+        </>
+
     )
 }
 
