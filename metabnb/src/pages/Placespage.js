@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from '../Components/Header/Header'
+import { GlobalStyles } from '../styles/Global.styled'
 
 const Placespage = () => {
     return (
-        <div>this is the places page</div>
+        <>
+            <GlobalStyles />
+            <Header />
+            <div>This is Market place</div>
+        </>
     )
 }
 

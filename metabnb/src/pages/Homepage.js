@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
+import Hero from '../Components/Hero/Hero'
 import { GlobalStyles } from '../styles/Global.styled'
 
 const Homepage = () => {
@@ -7,7 +8,8 @@ const Homepage = () => {
         <>
             <GlobalStyles />
             <Header />
-            <div>This is the homepage</div>
+
+            <Hero />
         </>
 
     )
