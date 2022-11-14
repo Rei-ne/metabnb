@@ -20,10 +20,24 @@ span{
     text-transform: capitalize;
     font-weight: bold;
 }
-.bottom-div{
+.bottom-div, .disco-div{
     background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    color: #fff
 
 }
+.disco-div {
+    p{
+    color: #fff
+}
+button{
+    background: #fff;
+    color: #CE4283;
+    height: 50px;
+        width: 156px;
+}
+height: 400px;
+}
+
 p{
     font-size: 13px;
     margin: 0;
@@ -104,7 +118,9 @@ margin: 0;
 }
 
 }
-
+h3{
+    font-size: 20px;
+}
 }
 
 @media screen and (min-width:1024px){
@@ -204,6 +220,16 @@ text-align:left;
             margin-top: 10px;
             padding: 0;
         }
+    }
+
+  ${'' /* .card-grid{
+        display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr 1fr; */}
+
+    }
+    h3{
+        font-size: 30px;
     }
 }
 

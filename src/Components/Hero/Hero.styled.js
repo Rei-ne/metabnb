@@ -139,9 +139,9 @@ text-align:left;
 }
 @media screen (min-width:1024px) and (max-width:2040px){
     height: 580px;
-    .bottom-div{
-        margin-top: 20px;
-    }
+
+
+
 
 }
 `;

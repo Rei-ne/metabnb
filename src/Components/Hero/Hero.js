@@ -6,10 +6,12 @@ import group from '../../assets/Group 4028.png'
 import { ReactComponent as Mbtoken } from '../../assets/mbtoken.svg'
 import { ReactComponent as Metamask } from '../../assets/metamask.svg'
 import { ReactComponent as Opensea } from '../../assets/opensea.svg'
+import Cards from '../Cards'
 
 
 
 const Hero = () => {
+
     return (
         <>
             <GlobalStyles />
@@ -41,8 +43,8 @@ const Hero = () => {
                 <Metamask className="svg" />
                 <Opensea className="svg" />
             </div>
-
-
+            <h3>Inspiration for your next adventure</h3>
+            <Cards />
         </>
     )
 }
