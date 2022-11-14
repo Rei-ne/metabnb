@@ -3,45 +3,33 @@ import styled from 'styled-components'
 export const StyledHero = styled.div`
 display: flex;
 
+padding: 10px 0;
 h2{
     font-weight: normal;
 }
 
 
 
-.search-div{
-    display: flex;
-    flex-direction: column;
-    input{
-        opacity: 0.6;
-border-radius: 4px;
-height: 45px;
-width: 390px;
-    }
-    button{
 
-height: 54px;
-width: 230px;
-
-
-
-    }
-}
-@media screen and (max-width:768px){
-    display: flex;
+${'' /* Small screens */}
+@media screen and (max-width:580px){
+display: flex;
 flex-direction: column;
 padding: 10px 2px;
 gap: 25px;
+
 .hero-img{
-    width: 250px;
+    width: 200px;
+    margin-top: 8px;
 }
 .heading1{
-    font-size: 15px;
-    width: auto;
-    padding: 0 20px;
-    text-align: center;
+    font-size: 14px;
+    width: 300px;
+
+    text-align: justify;
     h2{
         margin: 5px;
+        padding: 0;
     }
 
 }
@@ -58,24 +46,25 @@ line-height: 20px;
 .search-div{
     display: flex;
     flex-direction: column;
+    margin: 2px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     input{
-height: 45px;
-margin: 10px 20px;
-width: 300px;
+        height: 45px;
+        margin: 10px 20px;
+        width: 300px;
     }
     button{
-
-height: 54px;
-width: 300px;
-margin: 10px 20px;
+font-size: 12px;
+        height: 50px;
+        width: 300px;
+        margin: 10px 0;
 
 
     }
 }
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:580px) and (max-width:1024px){
 display: flex;
 align-items: center;
 justify-content:center;
@@ -89,7 +78,7 @@ gap: 5px;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    height: 450px;
+
     width: 50%;
 .heading1{
     width: auto;
@@ -99,24 +88,22 @@ h2{
         text-align: left;
         font-style: normal;
         font-weight: 400;
-        font-size: 40px;
-         letter-spacing: -0.02em;
-
-
-    }
+        font-size: 30px;
+        letter-spacing: -0.02em;
 }
+}
+
+
 .left-div{
     align-items: flex-start;
     padding-left: 35px;
     margin-left: 35px;
 
 }
+
 p{
 padding: 0;
-margin-top: 15px;
-margin-bottom: 5px;
 width: auto;
-height: 102px;
 font-family: 'Red Rose';
 font-style: normal;
 font-weight: 400;
@@ -131,15 +118,15 @@ text-align:left;
     flex-direction: row;
 
     margin-top: 38px;
-    max-width: 100%;
+    width: 350px;
 
     input{
-        height: 54px;
+        height: 44px;
         border-radius: 8px 0px 0px 8px;
 
     }
     button{
-        height: 54px;
+        height: 44px;
         border-radius: 0px 8px 8px 0px;
         }
 }
@@ -149,13 +136,11 @@ text-align:left;
         margin: 0;
 
 
-
-    .hero-img{
-        height:500px;
-
-        width: 450px;
-
-        }
+}
+@media screen (min-width:1024px) and (max-width:2040px){
+    height: 580px;
+    .bottom-div{
+        margin-top: 20px;
     }
 
 }

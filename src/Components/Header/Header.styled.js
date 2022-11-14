@@ -69,7 +69,7 @@ height: 25px;
 
 }
 ${'' /* small */}
-@media screen and (max-width:548px){
+@media screen and (max-width:680px){
 #connect{
     display: none;
 
@@ -104,11 +104,16 @@ height: 40px;
 width: 120px;
 border-radius: 10px;
 }
+.mobileNav{
+    display: flex;
+    top: 0;
+    height: 250px;
 
+}
 }
 
 ${'' /* tabs */}
-@media screen and (min-width:548px) and (max-width:768px){
+@media screen and (min-width:680px) and (max-width:1024px){
 .mobileNav{
     display: flex;
     top: 0;
@@ -146,7 +151,7 @@ padding: 10px;
 
 }
 ${'' /* desktop */}
-@media screen and (min-width:769px){
+@media screen and (min-width:1020px){
 
 display: flex;
 justify-content: space-between;

@@ -11,7 +11,8 @@ import { ReactComponent as Opensea } from '../../assets/opensea.svg'
 
 const Hero = () => {
     return (
-        <> <GlobalStyles />
+        <>
+            <GlobalStyles />
             <StyledHero>
 
                 <div className="left-div">
