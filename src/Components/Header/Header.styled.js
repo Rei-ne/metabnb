@@ -15,7 +15,11 @@ justify-content: space-around;
 .logo-img{
     height: 36.67px
 }
-
+.connect-btn {
+height: 48px;
+width: 170px;
+border-radius: 10px;
+}
 nav{
 display: flex;
 align-items: center;
@@ -23,8 +27,8 @@ align-items: center;
 gap: 10px;
 
     .nav-links{
-         color: #434343;
-         text-decoration: none;
+        color: #434343;
+        text-decoration: none;
 
     }
     .nav-links:hover, .nav-links:active{
@@ -41,7 +45,7 @@ gap: 10px;
 }
 
 .mobileNav{
-    height: 100vh;
+    height: 400px;
     position: fixed;
     top: 0;
     right: 0px;
@@ -90,10 +94,15 @@ justify-content: flex-start;
 .logo-img{
     height: 18px;
     padding-left: 20px;
-    padding-top: 20px;
+    margin-top: 2px;
 
 
 
+}
+.connect-btn {
+height: 40px;
+width: 120px;
+border-radius: 10px;
 }
 
 }
@@ -103,6 +112,7 @@ ${'' /* tabs */}
 .mobileNav{
     display: flex;
     top: 0;
+    height: 300px;
 
 }
 #connect{
@@ -133,6 +143,7 @@ padding: 10px;
 
 
 }
+
 }
 ${'' /* desktop */}
 @media screen and (min-width:769px){
