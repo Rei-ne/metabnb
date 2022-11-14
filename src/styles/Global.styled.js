@@ -196,6 +196,14 @@ text-align:left;
 }
 .bottom-div{
         margin-top: 40px;
+        height: 50px;
+        align-items: center;
+        justify-content:center;
+
+        .svg{
+            margin-top: 10px;
+            padding: 0;
+        }
     }
 }
 
