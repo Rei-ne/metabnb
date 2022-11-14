@@ -30,7 +30,8 @@ const Header = () => {
 
 
             </nav>
-            <button className="connect-btn">Connect Wallet</button>
+            <button id="connect" className="connect-btn">Connect Wallet</button>
+
             {/* hamburger */}
             {isNavExpanded ? (
                 //close button
