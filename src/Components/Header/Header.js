@@ -53,8 +53,8 @@ const Header = () => {
 
             {isNavExpanded &&
                 <nav className="mobileNav">
-                    <NavLink className="nav-links" to="/">Home</NavLink>
-                    <NavLink className="nav-links" to="/places">Places to stay</NavLink>
+                    <NavLink className="nav-links" to="/"onClick={() => { showNav() }}>Home</NavLink>
+                    <NavLink className="nav-links" to="/places"onClick={() => { showNav() }}>Places to stay</NavLink>
                     <NavLink className="nav-links" to="#" onClick={() => { showNav() }}>NFTs</NavLink>
                     <NavLink className="nav-links" to="#" onClick={() => { showNav() }}>Community</NavLink>
                     <button className="connect-btn" onClick={() => {

@@ -313,7 +313,12 @@ footer {
   }
   .pad {
     padding: 0.9rem 1rem;
+    text-align: left;
 
+p{
+  margin: 0;
+  padding: 0;
+}
     :nth-child(3) {
       background-color: #fff;
     }

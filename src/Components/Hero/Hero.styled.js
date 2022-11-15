@@ -9,9 +9,22 @@ margin-top: 20px;
 h2{
     font-weight: normal;
 }
+.search-div{
 
+    margin: 2px 0;
+   
+    input{
+       
+    
+    
+        padding: 0 2px;
+        ::placeholder{
+            padding: 0 2px;
+            margin-left: 2px; 
+        }
+    }
 
-
+}
 
 ${'' /* Small screens */}
 @media screen and (max-width:580px){
@@ -40,7 +53,7 @@ padding: 2px 15px;
 line-height: 20px;
 }
 .left-div{
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,6 +68,8 @@ line-height: 20px;
         height: 45px;
         margin: 10px 20px;
         width: 280px;
+        padding: 0 2px;
+    
     }
     button{
 font-size: 12px;
@@ -125,6 +140,7 @@ text-align:left;
     input{
         height: 44px;
         border-radius: 8px 0px 0px 8px;
+        padding: 0 2px;
 
     }
     button{
@@ -141,8 +157,19 @@ text-align:left;
 }
 }
 @media screen (min-width:1024px) {
+.search-div{
+    input{
+        height: 44px;
+        border-radius: 8px 0px 0px 8px;
+        padding: 0 5px;
+        ::placeholder{
+            margin: 0 5px;
+           
+        }
 
-border: 1px solid red;
+    }
+}
+
 
 
 }

@@ -16,7 +16,7 @@ justify-content: space-around;
     height: 36.67px
 }
 .connect-btn {
-height: 48px;
+height: 45px;
 width: 170px;
 border-radius: 10px;
 }
@@ -189,7 +189,7 @@ line-height: 20px;
 
 }
 .connect-btn{
-height: 48px;
+height: 45px;
 width: 170px;
 border-radius: 10px;
 
