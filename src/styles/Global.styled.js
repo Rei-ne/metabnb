@@ -246,7 +246,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
   padding: 1rem;
-
+height: auto;
 
 
   h3 {
@@ -518,14 +518,19 @@ margin: 0;
   .filter {
     flex-direction: row;
     flex-wrap: wrap;
-height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+height: auto;
 width:auto;
-h3{
-width: 30%;
 
+h3{
+width: 20%;
+text-align: center;
 margin: 0;
+
 }
-    }
+    
+}
 }
 ${'' /* big screen */}
 
@@ -697,10 +702,14 @@ footer {
 
   // MARKETPLACE
   .filter {
-    padding-inline: 7rem;
+    padding-inline: 5rem;
     display: grid;
   grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
-
+h3{
+  
+  text-align: center;
+  padding: 2px;
+}
   }
 
 
