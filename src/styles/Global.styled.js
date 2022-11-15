@@ -3,11 +3,22 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
 
+
+// resets
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
 font-family: 'Red Rose', sans-serif !important;
 text-align: center;
 margin: 0;
 padding: 0;
+
 }
 button{
 background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
@@ -69,6 +80,11 @@ svg{
         width: 230px;
     }
 }
+.inspiration{
+padding: 10px 0;
+margin: 10px 0;
+
+}
 .cards-section {
   h2 {
     text-align: center;
@@ -90,6 +106,7 @@ svg{
   display: inline-block;
   padding: 0.8rem;
   max-width: 300px;
+  height: auto;
 
   .img-container {
     position: relative;
@@ -117,12 +134,17 @@ svg{
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    margin: 10px 0;
-    p{
+    margin: 8px 0;
+    align-items: center;
 
+
+    p{
+        padding: 0;
+        margin: 0;
 height: auto;
     width: auto;
-font-size: 15px;
+font-size: 13px;
+display: inline;
   }
   }
 
@@ -330,6 +352,7 @@ footer {
         padding: 0;
     }
 }
+
 .hero-img{
 
 }
@@ -350,15 +373,41 @@ flex-direction: row;
 margin-top: 30px;
 
 .svg {
-    height: 20px;
+    height: 28px;
     padding: 5px;
 }
 }
 h3{
-    font-size: 10px;
+    font-size: 5px;
     margin: 0 .2em;
 }
+.inspiration{
+    font-size: 20px;
+}
 
+
+.details {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+    h4{
+
+        height: auto;
+        text-align: left;
+    }
+    p{
+
+        height: auto;
+text-align: left;
+        display: flex;
+
+
+        margin: 0;
+  }
+  }
 footer {
   background-color: black;
   color: white;
@@ -368,7 +417,10 @@ padding: 0;
 
   justify-content: center;
   padding: 2rem 1rem;
-
+img{
+  height: 45px;
+  padding: 3px;
+}
   ul {
     padding-block: 0rem;
     place-items: center;
@@ -383,6 +435,7 @@ padding-inline-start: 0;
     }
     h3 {
       padding-bottom: 5px;
+      font-size: 20px;
     }
   }
 }
@@ -404,18 +457,18 @@ margin: 0;
 }
 
 }
-h3{
-    font-size: 20px;
+.inspiration{
+    font-size: 15px;
 }
 .cards {
-    padding: 3rem 7rem;
+    padding: 3rem 5rem;
   }
 
 .meta-nfts {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 7rem;
-    height: 100%;
+    height: 300px;
     align-items: center;
 
     h2 {
@@ -430,7 +483,22 @@ h3{
       width: 200px;
     }
     .meta-text {
-      max-width: 40%;
+      max-width: 50%;
+      text-align: left;
+      h2{
+        margin: 0;
+        padding: 0;
+      }
+      p{
+        font-size: 10px;
+        padding: 1rem 0;
+      }
+      button{
+        width: 90px;
+        height: 35px;
+        font-size: 10px;
+        padding: 0;
+      }
     }
 .images-container{
     max-width: 60%;
@@ -439,7 +507,7 @@ h3{
 
   }
   footer {
-    padding: 2rem 7rem;
+    padding: 2rem 3rem;
   }
   .footer {
     display: flex;
@@ -453,7 +521,12 @@ h3{
   .copyright {
     text-align: left;
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 18px;
+  }
+  ul{
+    h3{
+        font-size: 20px;
+    }
   }
 
   // MARKETPLACE
@@ -469,7 +542,7 @@ margin: 0;
 }
     }
 }
-
+${'' /* big screen */}
 
 @media screen and (min-width:1024px){
     display: flex;
@@ -519,7 +592,7 @@ font-family: 'Red Rose';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
-line-height: 35px;
+line-height: 25px;
 color: #434343;
 text-align:left;
 
@@ -559,7 +632,7 @@ text-align:left;
         object-fit: contain;
 }
 .bottom-div{
-        margin-top: 40px;
+        margin-top: 50px;
         height: 50px;
         align-items: center;
         justify-content:center;
@@ -573,33 +646,42 @@ text-align:left;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 7rem;
-    height: 100%;
+    height: 500px;
     align-items: center;
 
 
-    h2 {
+ .meta-text {
+      max-width: 50%;
       text-align: left;
-      font-size: 2rem;
-    }
-    p {
-      padding-block: 1rem;
-      font-size: 1.2rem;
-      line-height: 22px;
 
-    }
-    button {
-      width: 200px;
-    margin-top: 20px;
-
-
-    }
-    .meta-text {
-      max-width: 40%;
-      display: flex;
-      flex-direction: column;
       align-items: left;
-      justify-content: space-between;
+
+      h2{
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      font-size: 2rem;
+      }
+      p{
+        font-size: 15px;
+        padding: 1rem 0;
+        max-width: 75%;
+
+      }
+      button{
+        width: 90px;
+        height: 35px;
+        font-size: 10px;
+        padding: 0;
+        margin-top: 25px;
+      }
     }
+
+
+
+
+}
+
 .images-container{
     max-width: 60%;
 .group-img{

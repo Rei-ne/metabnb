@@ -4,6 +4,8 @@ export const StyledHero = styled.div`
 display: flex;
 
 padding: 10px 0;
+height: auto;
+margin-top: 20px;
 h2{
     font-weight: normal;
 }
@@ -52,12 +54,12 @@ line-height: 20px;
     input{
         height: 45px;
         margin: 10px 20px;
-        width: 300px;
+        width: 280px;
     }
     button{
 font-size: 12px;
         height: 50px;
-        width: 300px;
+        width: 280px;
         margin: 10px 0;
 
 
@@ -137,10 +139,10 @@ text-align:left;
 
 
 }
-@media screen (min-width:1024px) and (max-width:2040px){
-    height: 580px;
+}
+@media screen (min-width:1024px) {
 
-
+border: 1px solid red;
 
 
 }

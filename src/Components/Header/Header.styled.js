@@ -92,11 +92,12 @@ justify-content: flex-start;
     display: none;
 }
 .logo-img{
-    height: 18px;
-    padding-left: 20px;
-    margin-top: 2px;
-
-
+    height: 25px;
+    width: auto;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    margin-left: 10px;
 
 }
 .connect-btn {
@@ -107,7 +108,7 @@ border-radius: 10px;
 .mobileNav{
     display: flex;
     top: 0;
-    height: 250px;
+    height: 300px;
 
 }
 }
@@ -131,7 +132,7 @@ padding: 10px;
 .icon{
     display: block;
     position: fixed;
-    right: 18px;
+    right: 25px;
     top: 15px;
     z-index: 1000;
     height: 21px;
@@ -142,9 +143,15 @@ padding: 10px;
     display: none;
 }
 .logo-img{
-    height: 20px;
-    padding-left: 20px;
-    padding-top: 15px;
+
+    height: 25px;
+    width: auto;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    margin-left: 10px;
+
+
 
 
 }

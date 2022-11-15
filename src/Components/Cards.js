@@ -15,11 +15,11 @@ export default function Cards() {
                         <img src={img} alt="metaverse homes" />
                         <GrFavorite className="favorite-icon" />
                     </div>
-                    <div className="details">
+                    <div className="details top">
                         <p>Desert king</p>
                         <h4>1MBT per night</h4>
                     </div>
-                    <div className="details">
+                    <div className="details bottom">
                         <p>2345km away</p>
                         <p>Available for 2weeks stay</p>
                     </div>

@@ -43,7 +43,7 @@ const Hero = () => {
                 <Metamask className="svg" />
                 <Opensea className="svg" />
             </div>
-            <h3>Inspiration for your next adventure</h3>
+            <h3 className="inspiration">Inspiration for your next adventure</h3>
             <Cards />
         </>
     )
