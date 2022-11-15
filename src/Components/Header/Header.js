@@ -3,9 +3,12 @@ import logo from "../../assets/logo.png";
 import { StyledHeader } from './Header.styled';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Connect from "../Connect";
+
 
 const Header = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const showNav = () => {
 
@@ -30,7 +33,12 @@ const Header = () => {
 
 
             </nav>
-            <button id="connect" className="connect-btn">Connect Wallet</button>
+            <button id="connect" className="connect-btn" onClick={() => {
+                setShowModal(true)
+
+            }}>Connect Wallet</button>
+
+
 
             {/* hamburger */}
             {isNavExpanded ? (
@@ -49,10 +57,14 @@ const Header = () => {
                     <NavLink className="nav-links" to="/places">Places to stay</NavLink>
                     <NavLink className="nav-links" to="#" onClick={() => { showNav() }}>NFTs</NavLink>
                     <NavLink className="nav-links" to="#" onClick={() => { showNav() }}>Community</NavLink>
-                    <button className="connect-btn">Connect Wallet</button>
+                    <button className="connect-btn" onClick={() => {
+                        setShowModal(true)
+                        showNav()
+                    }}>Connect Wallet</button>
                 </nav>
             }
 
+            {showModal && <Connect setShowModal={setShowModal} />}
 
 
 

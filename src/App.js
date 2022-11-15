@@ -12,6 +12,7 @@ import { GlobalStyles } from './styles/Global.styled'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { ScrollToTop } from './Components/ScrollToTop';
 
 library.add(fas, faFontAwesome)
 
@@ -21,6 +22,7 @@ function App() {
     <>
       <GlobalStyles />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/places" element={<Placespage />} />

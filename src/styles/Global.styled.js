@@ -15,6 +15,13 @@ color: #fff;
 border-radius: 10px;
 border: none;
 }
+.times{
+    background: black;
+    color: black;
+}
+ul {
+  list-style-type: none;
+}
 span{
     color: #A02279;
     text-transform: capitalize;
@@ -62,8 +69,256 @@ svg{
         width: 230px;
     }
 }
-@media screen and (max-width:300px){
+.cards-section {
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2rem 1rem;
+  }
+}
+.cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
 
+.card {
+  border: 1px solid #D7D7D7;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 0.8rem;
+  max-width: 300px;
+
+  .img-container {
+    position: relative;
+
+
+    img {
+      width: 100%;
+
+    }
+  }
+  .favorite-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+    path {
+      stroke: black;
+      stroke-width: 1;
+      fill: gray;
+    }
+  }
+  .details {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+    p{
+
+height: auto;
+    width: auto;
+font-size: 15px;
+  }
+  }
+
+  .stars {
+    margin-top: 10px;
+display: flex;
+
+    svg {
+      fill: #a02279;
+      stroke: #a02279;
+      margin-right: 5px;
+    }
+  }
+}
+.meta-nfts {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  background-color: #a02279;
+  color: white;
+  padding: 2rem 1rem;
+  overflow: hidden;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  p {
+    padding-block: 1rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: white;
+  }
+
+  button {
+    color: #a02279;
+    background: white !important;
+    border: 1px solid white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    width: 300px;
+    font-size: 1rem;
+  }
+}
+
+.images-container {
+
+
+.group-img{
+    width: 100%;
+
+}
+
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+
+  ul {
+    padding-block: 1rem;
+
+    li {
+      padding-block: 10px;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    h3 {
+      padding-bottom: 5px;
+    }
+  }
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 1rem;
+  svg {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      color: steelblue;
+    }
+  }
+}
+.wallet-btn-desktop {
+  display: none;
+}
+
+// MARKETPLACE PAGE
+
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  padding: 1rem;
+
+
+
+  h3 {
+    color: black-100;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+
+  }
+
+  .filter-location {
+    border: 1px solid #B4B4B4;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 15px;
+
+    cursor: pointer;
+  }
+}
+
+// WALLET MODAL
+.wallet-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 15;
+  padding-inline: 2rem;
+}
+.wallets {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+
+  .border-btm {
+    padding: 0.9rem 1rem;
+    border-bottom: 1px solid black-100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      background-color: white;
+      border: none;
+      cursor: pointer;
+
+      svg {
+        font-size: 1rem;
+      }
+    }
+  }
+  .pad {
+    padding: 0.9rem 1rem;
+
+    :nth-child(3) {
+      background-color: #fff;
+    }
+  }
+
+  .crypto-wallet {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    margin-block: 15px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    img {
+      width: 35px;
+    }
+    svg {
+      position: absolute;
+     right: 1rem;
+    }
+
+  }
 }
 @media screen and (max-width:580px){
 .left-div{
@@ -99,7 +354,38 @@ margin-top: 30px;
     padding: 5px;
 }
 }
+h3{
+    font-size: 10px;
+    margin: 0 .2em;
+}
 
+footer {
+  background-color: black;
+  color: white;
+padding: 0;
+  text-align: center;
+  align-items: center;
+
+  justify-content: center;
+  padding: 2rem 1rem;
+
+  ul {
+    padding-block: 0rem;
+    place-items: center;
+margin: 0;
+margin-block: 0;
+padding-inline-start: 0;
+
+    li {
+      padding-block: 1.5em;
+     font-weight: 300;
+      cursor: pointer;
+    }
+    h3 {
+      padding-bottom: 5px;
+    }
+  }
+}
 }
 @media screen and (min-width:580px) and (max-width:1024px){
 .right-div {
@@ -121,7 +407,69 @@ margin: 0;
 h3{
     font-size: 20px;
 }
+.cards {
+    padding: 3rem 7rem;
+  }
+
+.meta-nfts {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 7rem;
+    height: 100%;
+    align-items: center;
+
+    h2 {
+      text-align: left;
+      font-size: 2rem;
+    }
+    p {
+      padding-block: 2rem;
+      font-size: 1.3rem;
+    }
+    button {
+      width: 200px;
+    }
+    .meta-text {
+      max-width: 40%;
+    }
+.images-container{
+    max-width: 60%;
+
 }
+
+  }
+  footer {
+    padding: 2rem 7rem;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .socials {
+    justify-content: start;
+    padding-top: 7rem;
+  }
+  .copyright {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  // MARKETPLACE
+  .filter {
+    flex-direction: row;
+    flex-wrap: wrap;
+height: 100px;
+width:auto;
+h3{
+width: 30%;
+
+margin: 0;
+}
+    }
+}
+
 
 @media screen and (min-width:1024px){
     display: flex;
@@ -220,18 +568,80 @@ text-align:left;
             margin-top: 10px;
             padding: 0;
         }
+}
+.meta-nfts {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 7rem;
+    height: 100%;
+    align-items: center;
+
+
+    h2 {
+      text-align: left;
+      font-size: 2rem;
+    }
+    p {
+      padding-block: 1rem;
+      font-size: 1.2rem;
+      line-height: 22px;
+
+    }
+    button {
+      width: 200px;
+    margin-top: 20px;
+
+
+    }
+    .meta-text {
+      max-width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: space-between;
+    }
+.images-container{
+    max-width: 60%;
+.group-img{
+    height: 500px;
+    padding: 30px 0;
     }
 
-  ${'' /* .card-grid{
-        display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: 1fr 1fr; */}
+}
+
+    }
+footer {
+    padding: 2rem 7rem;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .socials {
+    justify-content: start;
+    padding-top: 7rem;
+  }
+  .copyright {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  // MARKETPLACE
+  .filter {
+    padding-inline: 7rem;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+
+  }
 
     }
     h3{
         font-size: 30px;
     }
-}
+
 
 
 
