@@ -410,13 +410,14 @@ text-align: left;
   }
 footer {
   background-color: black;
-  color: white;
+
+  ${'' /* color: white;
 padding: 0;
   text-align: center;
   align-items: center;
 
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem; */}
 img{
   height: 45px;
   padding: 3px;
@@ -506,28 +507,7 @@ margin: 0;
 }
 
   }
-  footer {
-    padding: 2rem 3rem;
-  }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .socials {
-    justify-content: start;
-    padding-top: 7rem;
-  }
-  .copyright {
-    text-align: left;
-    padding-top: 10px;
-    font-size: 18px;
-  }
-  ul{
-    h3{
-        font-size: 20px;
-    }
-  }
+
 
   // MARKETPLACE
   .filter {
@@ -691,7 +671,6 @@ text-align:left;
 
 }
 
-    }
 footer {
     padding: 2rem 7rem;
   }
@@ -719,11 +698,12 @@ footer {
 
   }
 
-    }
+
     h3{
         font-size: 30px;
     }
 
+}
 
 
 
