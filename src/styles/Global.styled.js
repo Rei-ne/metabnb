@@ -105,7 +105,7 @@ margin: 10px 0;
   border-radius: 8px;
   display: inline-block;
   padding: 0.8rem;
-  max-width: 300px;
+  max-width: 280px;
   height: auto;
 
   .img-container {
@@ -529,7 +529,7 @@ text-align: center;
 margin: 0;
 
 }
-    
+
 }
 }
 ${'' /* big screen */}
@@ -704,9 +704,9 @@ footer {
   .filter {
     padding-inline: 5rem;
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
 h3{
-  
+
   text-align: center;
   padding: 2px;
 }
@@ -716,6 +716,15 @@ h3{
     h3{
         font-size: 30px;
     }
+    .cards {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
 
 }
 
