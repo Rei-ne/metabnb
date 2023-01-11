@@ -23,7 +23,7 @@ const Hero = () => {
 
                     </div>
                     <div className="p-tag">
-                        <p>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
+                        <p>We provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
                     </div>
                     <div className="search-div">
                         <input type="search" placeholder="Search for location">

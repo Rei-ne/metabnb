@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from "react";
+
 import { GrFavorite } from "react-icons/gr";
 import { FiStar } from "react-icons/fi";
 import { metaverseHome } from "../data";
 
 
 export default function Cards() {
+    const [color, setColor] = useState("");
 
     return (
         <div className="cards">
@@ -13,7 +15,13 @@ export default function Cards() {
                 return <div className="card" key={index}>
                     <div className="img-container">
                         <img src={img} alt="metaverse homes" />
-                        <GrFavorite className="favorite-icon" />
+                        <div>
+                            <GrFavorite className="favorite-icon" fill={color}
+                                onClick={() => {
+                                    setColor("red");
+                                }} />
+                        </div>
+
                     </div>
                     <div className="details top">
                         <p>Desert king</p>

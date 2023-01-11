@@ -106,30 +106,40 @@ margin: 10px 0;
   display: inline-block;
   padding: 0.8rem;
   max-width: 280px;
-  height: auto;
+  height: 300px;
 
   .img-container {
     position: relative;
-
+    height: 50%;
+width: 100%;
+border-radius: 8px;
 
     img {
       width: 100%;
-
+      height: 100%;
+      object-fit: cover;
     }
   }
   .favorite-icon {
     position: absolute;
     font-size: 1.5rem;
-    top: 10px;
+    top: 8px;
     right: 10px;
     cursor: pointer;
 
-    path {
-      stroke: black;
-      stroke-width: 1;
-      fill: gray;
-    }
+
+
   }
+  path {
+    stroke: black;
+    stroke-width: 1;
+    fill: gray;
+  }
+      clicked{
+      stroke: white;
+      stroke-width: 1;
+      fill: red;
+    }
   .details {
     display: flex;
     gap: 10px;

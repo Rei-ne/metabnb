@@ -39,23 +39,29 @@ gap: 25px;
 }
 .heading1{
     font-size: 14px;
-    width: 300px;
-
-    text-align: justify;
+     text-align: center;
     h2{
         margin: 5px;
         padding: 0;
     }
 
 }
+.p-tag{
+    height: 80px;
+    max-width: 80vw;
+
+}
 p{
 padding: 2px 15px;
-line-height: 20px;
+line-height: 15px;
+
+text-align: justify;
 }
 .left-div{
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 .search-div{
@@ -67,14 +73,14 @@ line-height: 20px;
     input{
         height: 45px;
         margin: 10px 20px;
-        width: 280px;
+        width: 260px;
         padding: 0 2px;
     
     }
     button{
 font-size: 12px;
         height: 50px;
-        width: 280px;
+        width: 260px;
         margin: 10px 0;
 
 
